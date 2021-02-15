@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jobinj.pollit">
+    <!--android:icon="@mipmap/ic_launcher"-->
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:icon="@drawable/silhouette"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".first_loading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".check_poll"
+            android:label="@string/check_poll" />
+        <activity
+            android:name=".create_poll"
+            android:label="@string/create_poll" />
+        <activity
+            android:name=".join_poll"
+            android:label="@string/join_poll" />
+        <activity
+            android:name=".login_activity"
+            android:label="@string/_login_" />
+        <activity
+            android:name=".forgot_password"
+            android:label="@string/_forgot_password_" />
+        <activity
+            android:name=".create_account"
+            android:label="@string/_create_account_" />
+        <activity android:name=".join_poll_view_poll" />
+        <activity android:name=".join_poll_view_results" />
+        <activity
+            android:name=".resend_email_verification"
+            android:label="@string/_resend_email_verification_" />
+        <activity android:name=".check_poll1" />
+        <activity android:name=".check_poll2" />
+    </application>
+
+</manifest>
